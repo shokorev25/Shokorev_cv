@@ -9,7 +9,7 @@ assert image.shape[0] == image.shape[1]
 color1 = [255, 128, 0]
 color2 = [0, 128, 255]
 for i in range(size):
-    for j in range(size)
+    for j in range(size):
         t = (i + j) / (2 * (size - 1))
         r = lerp(color1[0], color2[0], t)
         g = lerp(color1[1], color2[1], t)
