@@ -10,7 +10,7 @@ def prefix_to_infix(expression: str) -> str:
             stack.append(token)
         elif token in {"+", "-", "*", "/"}:  
             if len(stack) < 2:
-                raise ValueError("Недостаточно операндов для оператора")
+                raise ValueError("Недостаточно операндов")
             operand1 = stack.pop()
             operand2 = stack.pop()
             stack.append(f"({operand1} {token} {operand2})")
