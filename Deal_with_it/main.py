@@ -24,8 +24,8 @@ while True:
 
         for i in range(glasses_height):
             for j in range(glasses_width):
-                if glasses_resized[i, j][3] != 0:  # Проверка, если пиксель не прозрачный
-                    face_roi[i, j] = glasses_resized[i, j][:3]  # Наложение RGB компоненты
+                if glasses_resized[i, j][3] != 0:  
+                    face_roi[i, j] = glasses_resized[i, j][:3]  
 
         frame[y:y+h, x:x+w] = face_roi
 
